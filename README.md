@@ -1,4 +1,7 @@
-# api documentation for  [grunt-email-builder (v4.0.0)](https://github.com/Email-builder/grunt-email-builder)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-email-builder.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-email-builder) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-email-builder.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-email-builder)
+# npmdoc-grunt-email-builder
+
+#### api documentation for  [grunt-email-builder (v4.0.0)](https://github.com/Email-builder/grunt-email-builder)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-email-builder.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-email-builder) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-email-builder.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-email-builder)
+
 #### Inline css, send email tests, and send Litmus tests
 
 [![NPM](https://nodei.co/npm/grunt-email-builder.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-email-builder)
@@ -18,24 +21,32 @@
 ```json
 
 {
+    "name": "grunt-email-builder",
+    "description": "Inline css, send email tests, and send Litmus tests",
+    "version": "4.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Email-builder/grunt-email-builder.git"
+    },
+    "contributors": [
+        "Jeremy Peter <jeremywpeter@gmail.com> (https://github.com/jeremypeter)",
+        "Steve Miller <steven.jmiller@gmail.com> (http://www.stevenjohnmiller.com.au)"
+    ],
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/Email-builder/grunt-email-builder/issues"
     },
-    "contributors": [
-        {
-            "name": "Jeremy Peter",
-            "url": "https://github.com/jeremypeter"
-        },
-        {
-            "name": "Steve Miller",
-            "url": "http://www.stevenjohnmiller.com.au"
-        }
-    ],
-    "dependencies": {
-        "bluebird": "^3.4.1",
-        "email-builder-core": "^2.0.0"
+    "homepage": "https://github.com/Email-builder/grunt-email-builder",
+    "main": "grunt.js",
+    "engines": {
+        "node": "*"
     },
-    "description": "Inline css, send email tests, and send Litmus tests",
+    "scripts": {
+        "test": "grunt test"
+    },
+    "keywords": [
+        "gruntplugin"
+    ],
     "devDependencies": {
         "grunt": "~1.0.1",
         "grunt-contrib-clean": "~1.0.0",
@@ -43,39 +54,11 @@
         "grunt-contrib-nodeunit": "~1.0.0",
         "grunt-contrib-watch": "~1.0.0"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "622651198d29af4e9680137fdbd268b243c7bc05",
-        "tarball": "https://registry.npmjs.org/grunt-email-builder/-/grunt-email-builder-4.0.0.tgz"
+    "dependencies": {
+        "bluebird": "^3.4.1",
+        "email-builder-core": "^2.0.0"
     },
-    "engines": {
-        "node": "*"
-    },
-    "gitHead": "5ef0e08d6c3eee5e2dcbc06530f33cf641ae67d3",
-    "homepage": "https://github.com/Email-builder/grunt-email-builder",
-    "keywords": [
-        "gruntplugin"
-    ],
-    "license": "MIT",
-    "main": "grunt.js",
-    "maintainers": [
-        {
-            "name": "yargalot"
-        },
-        {
-            "name": "jeremypeter"
-        }
-    ],
-    "name": "grunt-email-builder",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Email-builder/grunt-email-builder.git"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "version": "4.0.0"
+    "bin": {}
 }
 ```
 
